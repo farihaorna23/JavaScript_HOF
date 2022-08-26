@@ -11,7 +11,7 @@ const plus = number => {
 // const plus15 = plus(15);
 // console.log(plus15(10));
 
-console.log("EXERCISE 1:\n==========\n");
+console.log("EXERCISE 2:\n==========\n");
 let users = [
   {
     name: "Frodo",
@@ -43,4 +43,13 @@ const print = users => {
   users.forEach(user => console.log(user.name));
 };
 
-print(users);
+// print(users);
+console.log("EXERCISE 3:\n==========\n");
+
+const namesScore = users => {
+  console.log(users);
+  const result = users.map(user => `${user.name} : ${user.score}`);
+  console.log(result);
+};
+
+namesScore(users);
