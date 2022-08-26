@@ -52,4 +52,13 @@ const namesScore = users => {
   console.log(result);
 };
 
-namesScore(users);
+// namesScore(users);
+
+console.log("EXERCISE 4:\n==========\n");
+const active = users => {
+  const activeUsers = users.filter(user => user.isActive === true);
+
+  console.log(activeUsers);
+};
+
+// active(users);
