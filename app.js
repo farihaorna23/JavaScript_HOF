@@ -62,3 +62,11 @@ const active = users => {
 };
 
 // active(users);
+
+console.log("EXERCISE 5:\n==========\n");
+
+const sortArr = users => {
+  return users.sort((a, b) => b.score - a.score);
+};
+
+console.log(sortArr(users));
