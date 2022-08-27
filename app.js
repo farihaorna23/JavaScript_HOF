@@ -69,4 +69,21 @@ const sortArr = users => {
   return users.sort((a, b) => b.score - a.score);
 };
 
-console.log(sortArr(users));
+// console.log(sortArr(users));
+
+// console.log(users);
+
+console.log("EXERCISE 6:\n==========\n");
+
+const average = users => {
+  let sum = users.reduce((acc, user) => {
+    return acc + user.score;
+  }, 0);
+
+  console.log(`The sum of all score is ${sum}`);
+
+  let avg = sum / users.length;
+  console.log(`the average score is ${avg}`);
+};
+
+average(users);
